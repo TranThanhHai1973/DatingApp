@@ -40,7 +40,7 @@ namespace API
             services.AddControllers();
             services.AddControllers();
             services.AddCors();
-           services.AddIdentityServices(_config);
+            services.AddIdentityServices(_config);
             // services.AddSwaggerGen(c =>
             // {
             //     c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });

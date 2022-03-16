@@ -1,0 +1,21 @@
+.dropdown-toggle, .dropdown-item {
+    cursor: pointer;
+}
+
+.dropdown-toggle {
+    position: relative;
+}
+.dropdowm-menu {
+    position: absolute;
+    margin-top: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 0 0.8px #ccc ;
+    
+}
+.dropdown-divider {
+    margin: 0;
+}
+
+.dropdowm-menu .dropdown-item {
+    padding: 0.5rem 2rem;
+}
