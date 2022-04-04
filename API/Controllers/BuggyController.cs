@@ -40,11 +40,11 @@ namespace API.Controllers
                 var thing = _context.Users.Find(-1);
                 var thingToReturn = thing.ToString();
                 return thingToReturn;           
-            }
-            catch
+             }
+             catch
             {
-                return StatusCode(500, " computer say no");
-            }
+                 return StatusCode(500, " computer say no");
+             }
         }
 
         [HttpGet("bad-request")]
