@@ -8,7 +8,7 @@ import { Member } from 'src/app/_modules/member';
 })
 export class MemberCardComponent implements OnInit {
 
-  @Input() member: Member | undefined; // doan nay khac them cai undefine
+  @Input() member!: Member; // doan nay khac them cai undefine
   constructor() { }
 
   ngOnInit(): void {
