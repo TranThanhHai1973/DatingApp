@@ -21,7 +21,7 @@ export class MembersService {
   constructor(private http: HttpClient) { }
 
   getMembers() {
-    if(this.members.length>0) return of(this.members)
+    if(this.members.length > 0) return of(this.members)
     return this.http.get<Member[]>(this.baseUrl + 'users').pipe(
       map(members => {
         this.members = members;
