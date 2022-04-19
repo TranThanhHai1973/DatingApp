@@ -1,6 +1,7 @@
 import { Photo } from "./photo"; 
 
 export interface Member {
+    result(result: any): never[];
     id: number;
     userName: string;
     photoUrl: string;
