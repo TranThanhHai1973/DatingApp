@@ -19,7 +19,7 @@ export class MemberMessagesComponent implements OnInit {
   member!: Member | undefined | any; 
 
 
-  constructor(private messageService: MessageService, private route: ActivatedRoute) { }
+  constructor(public messageService: MessageService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.data.subscribe(data => {
@@ -28,8 +28,7 @@ export class MemberMessagesComponent implements OnInit {
   }
 
   sendMessage() {
-    this.messageService.sendMessage(this.member.userName, this.messageContent).subscribe(message => {
-      this.messages.push(message);
+    this.messageService.sendMessage(this.member.userName, this.messageContent).then(() => {
       this.messageForm.reset();
     })
   }
